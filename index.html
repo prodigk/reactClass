@@ -4,13 +4,14 @@
   <body>
 
     <script>
-      var title = `WEB V`;
-      const sub = `World Wide Web!`;
-      var headerTag =`
+      function headerTag(title, sub) {
+        return
+        `
         <header>
-          <h1><a href="index.html">${title}</a></h1>
-          ${sub}
-        </header>`;
+            <h1><a href="index.html">${title}</a></h1>
+            ${sub}
+        </header>`
+      };
       var navTag = `
         <nav>
         <ol>
@@ -26,7 +27,7 @@
         </article>`;
       
       document.write(
-        headerTag+
+        headerTag('WEB','World Wide Web')+
         navTag+
         articleTag
       );
